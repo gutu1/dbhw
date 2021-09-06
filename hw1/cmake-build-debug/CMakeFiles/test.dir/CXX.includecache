@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/HwHiAiUser/CLionProjects/test/p0_starter.h
+memory
+-
+stdexcept
+-
+vector
+-
+
+/home/HwHiAiUser/CLionProjects/test/test.cpp
+iostream
+-
+p0_starter.h
+/home/HwHiAiUser/CLionProjects/test/p0_starter.h
+
