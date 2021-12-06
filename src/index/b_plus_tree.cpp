@@ -20,6 +20,9 @@ BPLUSTREE_TYPE::BPlusTree(const std::string &name,
     : index_name_(name), root_page_id_(root_page_id),
       buffer_pool_manager_(buffer_pool_manager), comparator_(comparator) {}
 
+INDEX_TEMPLATE_ARGUMENTS
+thread_local bool BPLUSTREE_TYPE::root_is_locked = false;
+
 /*
  * Helper function to decide whether current b+tree is empty
  */
